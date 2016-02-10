@@ -70,17 +70,17 @@ h3 {
   font-size: 12px;
 }
 
-#axolotl:hover + #axolotl-info,
-#balrog:hover + #balrog-info,
-#duck:hover + #duck-info,
-#ferret:hover + #ferret-info,
-#manatee:hover + #manatee-info,
-#pika:hover + #pika-info,
-#pudu:hover + #pudu-info,
-#rhino:hover + #rhino-info,
-#sand-cat:hover + #sand-cat-info,
-#woylie:hover + #woylie-info,
-#snow:hover + #snow-info {
+#axolotl:active + #axolotl-info,
+#balrog:active + #balrog-info,
+#duck:active + #duck-info,
+#ferret:active + #ferret-info,
+#manatee:active + #manatee-info,
+#pika:active + #pika-info,
+#pudu:active + #pudu-info,
+#rhino:active + #rhino-info,
+#sand-cat:active + #sand-cat-info,
+#woylie:active + #woylie-info,
+#snow:active + #snow-info {
   display: block;
 }
 
@@ -250,6 +250,6 @@ h3 {
 	background:rgba(0,0,0,0.25);
 }
 #infoBox:hover:after {
-  content: "(Hover over an image for more information)";
-  margin-left: 25px;
+  content: "(Click an image for more information)";
+  margin-left: 50px;
 }
