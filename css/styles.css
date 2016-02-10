@@ -46,18 +46,30 @@ h3 {
   left: 325px;
 }
 
-#axolotl-info {
+.animal-info {
   display: none;
   position: absolute;
   top: 740px;
   left: 770px;
   z-index: 3;
   width: 340px;
+  font-size: 12px;
 }
 
-#axolotl:hover + #axolotl-info {
+#axolotl:hover + #axolotl-info,
+#balrog:hover + #balrog-info,
+#duck:hover + #duck-info,
+#ferret:hover + #ferret-info,
+#manatee:hover + #manatee-info,
+#pika:hover + #pika-info,
+#pudu:hover + #pudu-info,
+#rhino:hover + #rhino-info,
+#sand-cat:hover + #sand-cat-info,
+#woylie:hover + #woylie-info,
+#snow:hover + #snow-info {
   display: block;
 }
+
 
 @keyframes hang {
   50% {
@@ -103,16 +115,6 @@ h3 {
   position: absolute;
   top: 160px;
   left: 350px;
-  transition: all .2s ease-in-out;
-}
-#ferret:hover {
-  transform: scale(1.1);
-}
-#ferret:hover:after {
-  font-weight: bold;
-  content: "Black Footed Ferret";
-  position: absolute;
-  text-align: center;
 }
 
 #manatee {
