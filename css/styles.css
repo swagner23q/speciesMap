@@ -13,5 +13,53 @@ header h1 {
   background-image: url(../img/world-map.jpg);
   width: 100%;
   height: 1000px;
+  position: relative;
   background-repeat: no-repeat;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+h4 {
+  text-align: center;
+  margin: 0;
+}
+
+#axolotl {
+  position: absolute;
+  top: 250px;
+  left: 250px;
+}
+
+#balrog {
+  position: absolute;
+  top: 650px;
+  left: 1550px;
+}
+
+#duck {
+  position: absolute;
+  top: 200px;
+  left: 1250px;
+}
+
+#ferret {
+  position: absolute;
+  top: 120px;
+  left: 350px;
+}
+
+#manatee {
+  position: absolute;
+  top: 250px;
+  left: 420px;
+}
+
+#pika {
+  position: absolute;
+  top: 250px;
+  left: 420px;
 }
