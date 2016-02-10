@@ -10,7 +10,21 @@ body {
   font-family: 'Architects Daughter', cursive;
 }
 header {
+  background-image: url("../img/rainbow.jpg");
+  background-size: cover;
+  width: 400px;
+  height: 150px;
   text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border: 2px dashed green;
+  box-shadow:
+  0 0 20px black,
+  20px 15px 30px yellow,
+  -20px 15px 30px lime,
+  -20px -15px 30px blue,
+  20px -15px 30px red;
 }
 #container {
   background-image: url(../img/world-map.jpg);
@@ -112,6 +126,11 @@ h3 {
   top: 200px;
   left: 1250px;
 }
+#duck:hover:after {
+  position: absolute;
+  text-align: center;
+  content: "Mandarin Duck";
+}
 
 #ferret {
   position: absolute;
@@ -142,7 +161,6 @@ h3 {
 }
 #pika:hover:after {
   position: absolute;
-  text-align: center;
   content: "Pika";
 }
 
@@ -173,18 +191,32 @@ h3 {
   top: 250px;
   left: 850px;
 }
+#sand-cat:hover:after {
+  position: absolute;
+  text-align: center;
+  content: "Sand Cat";
+}
 
 #snow {
   position: absolute;
   top: 95px;
   left: 1150px;
-  width: 200px;
+}
+#snow:hover:after {
+  position: absolute;
+  text-align: center;
+  content: "Snow Leopard";
 }
 
 #woylie {
   position: absolute;
   top: 580px;
   left: 1425px;
+}
+#woylie:hover:after {
+  position: absolute;
+  text-align: center;
+  content: "Woylie";
 }
 
 #infoBox {
@@ -216,4 +248,8 @@ h3 {
 		inset 0 10px 20px rgba(255,255,255,0.25),
 		inset 0 -15px 30px rgba(0,0,0,0.3);
 	background:rgba(0,0,0,0.25);
+}
+#infoBox:hover:after {
+  content: "(Hover over an image for more information)";
+  margin-left: 25px;
 }
