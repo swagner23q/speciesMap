@@ -5,7 +5,9 @@
        -moz-box-sizing: border-box;
             box-sizing: border-box;
 }
-
+body {
+  font-family: 'Arimo', sans-serif;
+}
 header h1 {
   text-align: center;
 }
@@ -19,25 +21,59 @@ header h1 {
 
 img {
   border-radius: 50%;
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 50px;
+  max-height: 50px;
+  margin: auto;
+  display: block;
+  box-shadow: 3px 3px 5px black;
 }
 
 h4 {
   text-align: center;
   margin: 0;
+  font-weight: 400;
+  /*display: none;*/
+}
+h3 {
+  text-decoration: underline;
+  text-align: center;
 }
 
 #axolotl {
   position: absolute;
   top: 250px;
-  left: 250px;
+  left: 325px;
+  transition: all .2s ease-in-out;
 }
+
+#axolotl-info {
+  display: none;
+}
+
+#axolotl:hover + #axolotl-info {
+  display: block;
+}
+#axolotl:hover {
+  transform: scale(1.1);
+  text-shadow: 1px 2px 5px yellow;
+  font-weight: 700;
+}
+#axolotl:hover:after {
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+}
+/*#axolotl:active:after {
+  content: "STUFF";
+}*/
 
 #balrog {
   position: absolute;
-  top: 650px;
-  left: 1550px;
+  top: 700px;
+  left: 1600px;
+}
+#balrog {
+
 }
 
 #duck {
@@ -48,8 +84,18 @@ h4 {
 
 #ferret {
   position: absolute;
-  top: 120px;
+  top: 160px;
   left: 350px;
+  transition: all .2s ease-in-out;
+}
+#ferret:hover {
+  transform: scale(1.1);
+}
+#ferret:hover:after {
+  font-weight: bold;
+  content: "Black Footed Ferret";
+  position: absolute;
+  text-align: center;
 }
 
 #manatee {
@@ -60,6 +106,51 @@ h4 {
 
 #pika {
   position: absolute;
+  top: 65px;
+  left: 350px;
+}
+
+#pudu {
+  position: absolute;
+  top: 600px;
+  left: 500px;
+}
+
+#rhino {
+  position: absolute;
+  top: 500px;
+  left: 925px;
+}
+
+#sand-cat {
+  position: absolute;
   top: 250px;
-  left: 420px;
+  left: 850px;
+}
+
+
+
+#snow {
+  position: absolute;
+  top: 95px;
+  left: 1150px;
+  width: 200px;
+}
+
+
+#woylie {
+  position: absolute;
+  top: 580px;
+  left: 1425px;
+}
+
+#infoBox {
+  border: 2px dashed black;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 700px;
+  left: 750px;
+  margin: auto;
 }
